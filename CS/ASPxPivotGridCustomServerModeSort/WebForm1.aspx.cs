@@ -10,22 +10,6 @@ namespace ASPxPivotGridCustomServerModeSort
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack && !IsCallback)
-            {
-                PivotGridField field = ASPxPivotGrid1.Fields["Year"];
-                ASPxPivotGrid1.BeginUpdate();
-                try
-                {
-                    field.FilterValues.Clear();
-                    field.FilterValues.Add(1996);
-                    field.FilterValues.FilterType = DevExpress.XtraPivotGrid.PivotFilterType.Included;
-                }
-                finally
-                {
-                    ASPxPivotGrid1.EndUpdate();
-                }
-            }
-
             // Sets fields' sort mode to Custom to raise the CustomServerModeSort event.
             fieldOrderMonth.SortMode = PivotSortMode.Custom;
             fieldCategoryName.SortMode = PivotSortMode.Custom;           

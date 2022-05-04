@@ -1,11 +1,11 @@
 ﻿<%@ Page Language="vb" AutoEventWireup="true" CodeBehind="WebForm1.aspx.vb" Inherits="ASPxPivotGridCustomServerModeSort.WebForm1" %>
 
-<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v15.1, Version=15.1.15.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
+<%@ Register Assembly="DevExpress.Web.ASPxPivotGrid.v22.1, Version=22.1.1.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a"
     Namespace="DevExpress.Web.ASPxPivotGrid" TagPrefix="dx" %>
 
-<%@ Register assembly="DevExpress.Web.v15.1, Version=15.1.15.0, Culture=neutral, 
+<%@ Register assembly="DevExpress.Web.v22.1, Version=22.1.1.0, Culture=neutral, 
 PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Data.Linq" tagprefix="dx" %>
-<%@ Register assembly="DevExpress.Web.v15.1, Version=15.1.15.0, Culture=neutral, 
+<%@ Register assembly="DevExpress.Web.v22.1, Version=22.1.1.0, Culture=neutral, 
 PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Data.Linq" tagprefix="dx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
@@ -20,20 +20,31 @@ PublicKeyToken=b88d1754d700e49a" namespace="DevExpress.Data.Linq" tagprefix="dx"
     <div>
         <dx:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server" ClientIDMode="AutoID" 
             DataSourceID="EntityServerModeDataSource1" EnableTheming="True" Theme="Metropolis" 
-            oncustomservermodesort="ASPxPivotGrid1_CustomServerModeSort">
+            oncustomservermodesort="ASPxPivotGrid1_CustomServerModeSort" IsMaterialDesign="False">
             <Fields>
                 <dx:PivotGridField ID="fieldOrderMonth" Area="ColumnArea" AreaIndex="1" 
-                    Caption="Month" FieldName="OrderDate" GroupInterval="DateMonth" 
+                    Caption="Month" GroupInterval="DateMonth" 
                     UnboundFieldName="fieldOrderMonth">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="OrderDate" GroupInterval="DateMonth" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
                 <dx:PivotGridField ID="fieldPrice" Area="DataArea" AreaIndex="0" 
-                    Caption="Price" FieldName="Extended_Price">
+                    Caption="Price">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="Extended_Price" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
                 <dx:PivotGridField ID="fieldOrderYear" Area="ColumnArea" AreaIndex="0" 
-                Caption="Year" FieldName="OrderDate" GroupInterval="DateYear" UnboundFieldName="field">
+                Caption="Year" GroupInterval="DateYear" UnboundFieldName="fieldOrderYear">
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="OrderDate" GroupInterval="DateYear" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
-                <dx:PivotGridField ID="fieldCategoryName" Area="RowArea" AreaIndex="0" 
-                FieldName="CategoryName" Caption="Category" >
+                <dx:PivotGridField ID="fieldCategoryName" Area="RowArea" AreaIndex="0" Caption="Category" Name="fieldCategoryName" >
+                    <DataBindingSerializable>
+                        <dx:DataSourceColumnBinding ColumnName="CategoryName" />
+                    </DataBindingSerializable>
                 </dx:PivotGridField>
             </Fields>
         </dx:ASPxPivotGrid>

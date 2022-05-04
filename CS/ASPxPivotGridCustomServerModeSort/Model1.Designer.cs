@@ -140,7 +140,7 @@ namespace ASPxPivotGridCustomServerModeSort
 
         #endregion
 
-        #region Primitive Properties
+        #region Simple Properties
     
         /// <summary>
         /// No Metadata Documentation available.
@@ -159,7 +159,7 @@ namespace ASPxPivotGridCustomServerModeSort
                 {
                     OnOrderIDChanging(value);
                     ReportPropertyChanging("OrderID");
-                    _OrderID = StructuralObject.SetValidValue(value);
+                    _OrderID = StructuralObject.SetValidValue(value, "OrderID");
                     ReportPropertyChanged("OrderID");
                     OnOrderIDChanged();
                 }
@@ -184,7 +184,7 @@ namespace ASPxPivotGridCustomServerModeSort
             {
                 OnCountryChanging(value);
                 ReportPropertyChanging("Country");
-                _Country = StructuralObject.SetValidValue(value, true);
+                _Country = StructuralObject.SetValidValue(value, true, "Country");
                 ReportPropertyChanged("Country");
                 OnCountryChanged();
             }
@@ -210,7 +210,7 @@ namespace ASPxPivotGridCustomServerModeSort
                 {
                     OnFirstNameChanging(value);
                     ReportPropertyChanging("FirstName");
-                    _FirstName = StructuralObject.SetValidValue(value, false);
+                    _FirstName = StructuralObject.SetValidValue(value, false, "FirstName");
                     ReportPropertyChanged("FirstName");
                     OnFirstNameChanged();
                 }
@@ -237,7 +237,7 @@ namespace ASPxPivotGridCustomServerModeSort
                 {
                     OnLastNameChanging(value);
                     ReportPropertyChanging("LastName");
-                    _LastName = StructuralObject.SetValidValue(value, false);
+                    _LastName = StructuralObject.SetValidValue(value, false, "LastName");
                     ReportPropertyChanged("LastName");
                     OnLastNameChanged();
                 }
@@ -264,7 +264,7 @@ namespace ASPxPivotGridCustomServerModeSort
                 {
                     OnProductNameChanging(value);
                     ReportPropertyChanging("ProductName");
-                    _ProductName = StructuralObject.SetValidValue(value, false);
+                    _ProductName = StructuralObject.SetValidValue(value, false, "ProductName");
                     ReportPropertyChanged("ProductName");
                     OnProductNameChanged();
                 }
@@ -291,7 +291,7 @@ namespace ASPxPivotGridCustomServerModeSort
                 {
                     OnCategoryNameChanging(value);
                     ReportPropertyChanging("CategoryName");
-                    _CategoryName = StructuralObject.SetValidValue(value, false);
+                    _CategoryName = StructuralObject.SetValidValue(value, false, "CategoryName");
                     ReportPropertyChanged("CategoryName");
                     OnCategoryNameChanged();
                 }
@@ -316,7 +316,7 @@ namespace ASPxPivotGridCustomServerModeSort
             {
                 OnOrderDateChanging(value);
                 ReportPropertyChanging("OrderDate");
-                _OrderDate = StructuralObject.SetValidValue(value);
+                _OrderDate = StructuralObject.SetValidValue(value, "OrderDate");
                 ReportPropertyChanged("OrderDate");
                 OnOrderDateChanged();
             }
@@ -342,7 +342,7 @@ namespace ASPxPivotGridCustomServerModeSort
                 {
                     OnUnitPriceChanging(value);
                     ReportPropertyChanging("UnitPrice");
-                    _UnitPrice = StructuralObject.SetValidValue(value);
+                    _UnitPrice = StructuralObject.SetValidValue(value, "UnitPrice");
                     ReportPropertyChanged("UnitPrice");
                     OnUnitPriceChanged();
                 }
@@ -369,7 +369,7 @@ namespace ASPxPivotGridCustomServerModeSort
                 {
                     OnQuantityChanging(value);
                     ReportPropertyChanging("Quantity");
-                    _Quantity = StructuralObject.SetValidValue(value);
+                    _Quantity = StructuralObject.SetValidValue(value, "Quantity");
                     ReportPropertyChanged("Quantity");
                     OnQuantityChanged();
                 }
@@ -396,7 +396,7 @@ namespace ASPxPivotGridCustomServerModeSort
                 {
                     OnDiscountChanging(value);
                     ReportPropertyChanging("Discount");
-                    _Discount = StructuralObject.SetValidValue(value);
+                    _Discount = StructuralObject.SetValidValue(value, "Discount");
                     ReportPropertyChanged("Discount");
                     OnDiscountChanged();
                 }
@@ -421,7 +421,7 @@ namespace ASPxPivotGridCustomServerModeSort
             {
                 OnExtended_PriceChanging(value);
                 ReportPropertyChanging("Extended_Price");
-                _Extended_Price = StructuralObject.SetValidValue(value);
+                _Extended_Price = StructuralObject.SetValidValue(value, "Extended_Price");
                 ReportPropertyChanged("Extended_Price");
                 OnExtended_PriceChanged();
             }
@@ -447,7 +447,7 @@ namespace ASPxPivotGridCustomServerModeSort
                 {
                     OnSales_PersonChanging(value);
                     ReportPropertyChanging("Sales_Person");
-                    _Sales_Person = StructuralObject.SetValidValue(value, false);
+                    _Sales_Person = StructuralObject.SetValidValue(value, false, "Sales_Person");
                     ReportPropertyChanged("Sales_Person");
                     OnSales_PersonChanged();
                 }
@@ -459,10 +459,8 @@ namespace ASPxPivotGridCustomServerModeSort
 
         #endregion
 
-    
     }
 
     #endregion
 
-    
 }

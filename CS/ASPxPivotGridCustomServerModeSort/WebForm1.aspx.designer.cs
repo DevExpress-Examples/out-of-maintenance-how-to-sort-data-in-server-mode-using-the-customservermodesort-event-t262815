@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------------
 
 namespace ASPxPivotGridCustomServerModeSort {
-    
-    
+
+
     public partial class WebForm1 {
-        
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +20,7 @@ namespace ASPxPivotGridCustomServerModeSort {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// ASPxPivotGrid1 control.
         /// </summary>
@@ -29,7 +29,7 @@ namespace ASPxPivotGridCustomServerModeSort {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.ASPxPivotGrid ASPxPivotGrid1;
-        
+
         /// <summary>
         /// fieldOrderMonth control.
         /// </summary>
@@ -38,7 +38,7 @@ namespace ASPxPivotGridCustomServerModeSort {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.PivotGridField fieldOrderMonth;
-        
+
         /// <summary>
         /// fieldPrice control.
         /// </summary>
@@ -47,7 +47,7 @@ namespace ASPxPivotGridCustomServerModeSort {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.PivotGridField fieldPrice;
-        
+
         /// <summary>
         /// fieldOrderYear control.
         /// </summary>
@@ -56,7 +56,7 @@ namespace ASPxPivotGridCustomServerModeSort {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.PivotGridField fieldOrderYear;
-        
+
         /// <summary>
         /// fieldCategoryName control.
         /// </summary>
@@ -65,7 +65,7 @@ namespace ASPxPivotGridCustomServerModeSort {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::DevExpress.Web.ASPxPivotGrid.PivotGridField fieldCategoryName;
-        
+
         /// <summary>
         /// EntityServerModeDataSource1 control.
         /// </summary>

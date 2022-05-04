@@ -1,5 +1,7 @@
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ASPxPivotGridCustomServerModeSort", "ASPxPivotGridCustomServerModeSort\ASPxPivotGridCustomServerModeSort.vbproj", "{F33949C4-4F83-478C-A813-9CE3E2F103F5}"
 EndProject
 Global
@@ -15,5 +17,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4E8A27F-2B12-4AA5-8CA6-00ED8BBB5224}
 	EndGlobalSection
 EndGlobal
